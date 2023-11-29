@@ -1,0 +1,20 @@
+{
+  "name": "omegle-with-monetization",
+  "version": "1.0.0",
+  "description": "create javascroipt and script tag\r   create server folder: controller database model and routers\r   we change views from html to ejs: ejs is a template engine that works only with an express server\r                                   : he is responsible for rendering files in html\r   create the server.js file with express server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.1",
+    "morgan": "^1.10.0",
+    "socket.io": "^4.7.2"
+  }
+}
