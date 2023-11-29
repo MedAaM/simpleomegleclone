@@ -5,9 +5,7 @@ const path = require("path");
 const app = express();
 const connectDB = require("./server/database/connection.js"); // database
 
-const dotenv= require('dotenv');
 dotenv.config()
-const PORT = process.env.PORT || 8080;
 
 connectDB();
 
