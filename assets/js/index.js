@@ -91,7 +91,7 @@ let init = async () => {
   //sets this stream to a video element with the ID "user-1" to display the user's own video feed within the application's user interface.
   document.getElementById("user-1").srcObject = localStream;
 
-$.post("/get-remote-users", { omeID: omeID })
+$.post("https://simpleomegleclone.vercel.app/get-remote-users", { omeID: omeID })
 
     .done(function (data) {
       console.log("Remoteuser id from Init() /get-remote-users: ", data[0]._id);
@@ -328,7 +328,7 @@ function fetchNextUser(remoteUser) {  //he function is invoked with the remoteUs
   
   //TTP POST request is made to the URL using $.post. The request includes the omeID and remoteUser as data parameters.
   $.post(
-    "/get-next-user",
+    "https://simpleomegleclone.vercel.app/get-next-user",
     { omeID: omeID, remoteUser: remoteUser },
 
     //Handling the Response:
