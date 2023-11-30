@@ -5,7 +5,7 @@ const path = require("path");
 const app = express();
 const connectDB = require("./server/database/connection.js"); // database
 
-PORT=process.env.port || 8080;
+PORT=8080;
 connectDB();
 
 app.use(express.urlencoded({ extended: true }));
